@@ -3,15 +3,18 @@ import './SocialLoginButtons.css';
 
 const SocialLoginButtons = () => {
   const handleFacebookLogin = () => {
-    alert('Facebook login clicked! (Demo only)');
+    // alert('Facebook login clicked! (Demo only)');
+    window.location.href = 'https://keycloak-production-d384.up.railway.app/realms/samui/protocol/openid-connect/auth?client_id=my-web-01&redirect_uri=https://demo-sso-app-1-27lma8y4q-chefs-projects-c3384331.vercel.app&response_type=code&scope=openid&kc_idp_hint=facebook';
   };
 
   const handleGoogleLogin = () => {
-    alert('Google login clicked! (Demo only)');
+    // alert('Google login clicked! (Demo only)');
+    window.location.href = 'https://keycloak-production-d384.up.railway.app/realms/samui/protocol/openid-connect/auth?client_id=my-web-01&redirect_uri=https://demo-sso-app-1-27lma8y4q-chefs-projects-c3384331.vercel.app&response_type=code&scope=openid&kc_idp_hint=google';
   };
 
   const handleLineLogin = () => {
-    alert('LINE login clicked! (Demo only)');
+    // alert('LINE login clicked! (Demo only)');
+    window.location.href = 'https://keycloak-production-d384.up.railway.app/realms/samui/protocol/openid-connect/auth?client_id=my-web-01&redirect_uri=https://demo-sso-app-1-27lma8y4q-chefs-projects-c3384331.vercel.app&response_type=code&scope=openid&kc_idp_hint=line';
   };
 
   return (
