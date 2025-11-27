@@ -70,6 +70,45 @@
   background-color: #00A500;
 }
 
+/* Keycloak Button */
+.keycloak-btn {
+  background-color: #4d5d7a;
+  color: white;
+}
+
+.keycloak-btn:hover {
+  background-color: #3e4a61;
+}
+
+/* Separator */
+.separator {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.separator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.separator span {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 15px;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
   .social-login-container {

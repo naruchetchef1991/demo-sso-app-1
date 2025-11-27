@@ -51,6 +51,20 @@ const SocialLoginButtons = () => {
         </svg>
         Continue with LINE
       </button>
+
+      <div className="separator">
+        <span>OR</span>
+      </div>
+
+      <button 
+        className="social-btn keycloak-btn"
+        onClick={() => window.location.href = `https://keycloak-production-d384.up.railway.app/realms/samui/protocol/openid-connect/auth?client_id=my-web-01&redirect_uri=${encodeURIComponent(window.location.origin)}&response_type=code&scope=openid`}
+      >
+        <svg className="social-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.5 0C5.2 0 0 5.2 0 11.5S5.2 23 11.5 23c2.3 0 4.5-.7 6.3-1.9l-2.4-2.4c-1.1.7-2.4 1.1-3.9 1.1-3.8 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7c0 1.5-.5 2.8-1.3 3.9l2.4 2.4c1.2-1.8 1.9-4 1.9-6.3C23 5.2 17.8 0 11.5 0zm0 8c-.9 0-1.5.6-1.5 1.5v4c0 .9.6 1.5 1.5 1.5s1.5-.6 1.5-1.5v-4c0-.9-.6-1.5-1.5-1.5z"/>
+        </svg>
+        Continue with Keycloak
+      </button>
     </div>
   );
 };
