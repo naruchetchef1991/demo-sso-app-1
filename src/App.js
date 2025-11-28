@@ -142,7 +142,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Social Login Demo</h1>
+        <h1>Social Login Demo APP 1</h1>
         <p>Choose your preferred login method</p>
         <SocialLoginButtons />
         <TokenHandler />
